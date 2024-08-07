@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dish Name - Food Festival</title>
+        <link rel="stylesheet" href="single-product.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="../pics/logo.png" alt="Food Festival Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+            <div class="login-button">
+                <a href="#">Login</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="dish-content">
+                <div class="dish-carousel">
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-item active">
+                                <img src="../pics/dish1.jpg" alt="Dish Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../pics/dish2.jpg" alt="Dish Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../pics/dish3.jpg" alt="Dish Image 3">
+                            </div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+
+                <div class="dish-details">
+                    <h1>Dish Name</h1>
+                    <p>A detailed description of the dish goes here. Include ingredients, preparation methods, and any other relevant information that might entice the customer.</p>
+                    <button class="order-now">Order Now</button>
+                </div>
+            </div>
+
+            <div class="user-reviews">
+                <h2>User Reviews</h2>
+                <div class="review">
+                    <p><strong>User 1:</strong> This dish was amazing! Highly recommend it.</p>
+                </div>
+                <div class="review">
+                    <p><strong>User 2:</strong> Loved the flavors and the presentation. Will order again.</p>
+                </div>
+                <div class="review">
+                    <p><strong>User 3:</strong> A bit too spicy for my taste, but overall very good.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Food Festival. All Rights Reserved.</p>
+        </footer>
+
+        <script src="carousel.js"></script>
+    </body>
+</html>

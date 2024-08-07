@@ -1,0 +1,182 @@
+body {
+    font-family: Lexend, sans-serif;
+    background-color: #ffc966; /* Background color */
+    color: #800000; /* Text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #000;
+    background-color: white;
+}
+
+.navbar-logo img {
+    max-height: 75px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center; /* Center the nav-links */
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+.nav-links .active {
+    color: #e74e43;
+}
+
+.login-button a {
+    padding: 10px 20px;
+    background-color: #f7931d;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login-button a:hover {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dish-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.dish-carousel {
+    margin-right: 2rem;
+}
+
+.carousel {
+    position: relative;
+    width: 500px; /* Adjust carousel width */
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dish-details {
+    flex: 1;
+}
+
+.dish-details h1 {
+    font-size: 2.5rem;
+    color: #800000;
+    margin-bottom: 1rem;
+}
+
+.dish-details p {
+    font-size: 1.2rem;
+    color: #4d0000;
+    line-height: 1.6;
+}
+
+.order-now {
+    padding: 10px 20px;
+    background-color: #f7931d;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.order-now:hover {
+    background-color: black;
+    color: white;
+}
+
+.user-reviews {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-reviews h2 {
+    font-size: 2rem;
+    color: #800000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.review {
+    margin-bottom: 1rem;
+}
+
+.review p {
+    font-size: 1rem;
+    color: #4d0000;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f7931d;
+    color: black;
+    font-size: 0.9rem; 
+}
